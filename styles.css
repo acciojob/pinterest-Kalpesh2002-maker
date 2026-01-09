@@ -1,56 +1,48 @@
-/*  your css code here. If applicable */
-.hero-container {
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
-  max-width: 800px; /* Adjust as needed */
-  margin: 20px auto; /* Centers the container on the page */
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-}
+ /* Container */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      max-width: 900px;
+      margin: 40px auto;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+    }
 
-.hero-image {
-  width: 50%; /* Image takes up half the container width */
-  height: 300px; /* Adjust height as needed */
-  background-image: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with the actual image URL */
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px 0 0 10px; /* Rounded corners on the left side */
-}
+    /* Image */
+    .hero img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
-.hero-text {
-  width: 50%; /* Text content takes up the other half */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-}
+    /* Content */
+    .content {
+      padding: 20px;
+    }
 
-.text-content {
-  margin-bottom: 20px;
-}
+    .content h1 {
+      margin-bottom: 10px;
+    }
 
-.hero-text h2 {
-  font-size: 1.5em;
-  color: #333;
-}
+    .content p {
+      margin-bottom: 20px;
+      color: #555;
+    }
 
-.hero-text p {
-  font-size: 1em;
-  color: #666;
-}
+    /* Explore Button */
+    .explore-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e60023;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
 
-.explore-btn {
-  padding: 10px 20px;
-  background-color: #e60023; /* Pinterest-like red color */
-  color: white;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
+    .explore-btn:hover {
+      opacity: 0.9;
+    }
